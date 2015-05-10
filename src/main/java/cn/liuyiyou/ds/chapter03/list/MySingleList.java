@@ -249,9 +249,7 @@ public class MySingleList<E> implements MyList<E> {
 	
 
 	/**
-	 * 这个方法很重要。负责list中节点的定位。需要注意空链表的时候和非空的时候 getNode(0)。是第一个节点。 注意：
-	 * 1、head永远不会为null 2、在链表为空的时候getNode(0)应该抛异常
-	 * 
+	 * 之前复用了这个方法，到后面觉得不行，因为效率会大大的降低
 	 * @param index
 	 * @return
 	 */
