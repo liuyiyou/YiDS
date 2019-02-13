@@ -9,7 +9,6 @@ package cn.liuyiyou.ds.chapter03.list;
  */
 public interface List<T>{
 
-    java.util.ArrayList
 
     void clear();
 
