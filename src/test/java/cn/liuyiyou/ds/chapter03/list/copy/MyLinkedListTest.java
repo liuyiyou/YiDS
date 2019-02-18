@@ -1,9 +1,9 @@
 package cn.liuyiyou.ds.chapter03.list.copy;
 
+import cn.liuyiyou.ds.chapter03.list.MyLinkedList;
 import org.junit.Before;
 import org.junit.Test;
 
-import cn.liuyiyou.ds.chapter03.list.copy.MyLinkedList;
 
 public class MyLinkedListTest {
 
