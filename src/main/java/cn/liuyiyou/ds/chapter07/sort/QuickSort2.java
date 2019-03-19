@@ -13,9 +13,6 @@ public class QuickSort2 {
         int i = left;
         int j = right;
         int temp = array[left];
-        if (left>=right){
-            System.out.println("finish");
-        }
         while (i!=j){
             while (i<j && array[j]>=temp)
                 j--;
@@ -24,7 +21,6 @@ public class QuickSort2 {
             if (i<j)
                 SortUtil.swap(array,i,j);
         }
-
         array[left] = array[i];
         array[i] = temp;
         quickSort1(array, left, j-1);
