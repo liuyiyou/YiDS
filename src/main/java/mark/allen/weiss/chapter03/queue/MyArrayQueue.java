@@ -1,6 +1,6 @@
 package mark.allen.weiss.chapter03.queue;
 
-import mark.allen.weiss.chapter03.MyArrayList;
+import mark.allen.weiss.chapter03.list.MyArrayList;
 
 public class MyArrayQueue<T> implements MyQueue<T>{
 	

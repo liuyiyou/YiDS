@@ -1,6 +1,5 @@
 package mark.allen.weiss.chapter03.list;
 
-import mark.allen.weiss.chapter03.MyArrayList;
 import org.junit.Before;
 import org.junit.Test;
 

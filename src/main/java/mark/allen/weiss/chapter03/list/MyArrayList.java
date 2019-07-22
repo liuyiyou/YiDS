@@ -1,9 +1,9 @@
-package mark.allen.weiss.chapter03;
+package mark.allen.weiss.chapter03.list;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class MyArrayList<T> {
+public class MyArrayList<T> implements Iterable<T> {
 
     // 默认的容量
     private static final int DEFAULT_CAPACITY = 10;
@@ -92,6 +92,7 @@ public class MyArrayList<T> {
 
     /**
      * 在指定位置添加元素，通过扩容手段
+     *
      * @param index
      * @param t
      */
@@ -135,8 +136,7 @@ public class MyArrayList<T> {
     /**
      * 扩容
      *
-     * @param newCapacity
-     *            ：
+     * @param newCapacity ：
      */
     public void ensureCapacity(int newCapacity) {
         // 如果需要的列表大小小于列表大小
@@ -162,7 +162,7 @@ public class MyArrayList<T> {
 
     }
 
-    public String toString(){
+    public String toString() {
         for (int i = 0; i < theItems.length; i++) {
             System.out.print(theItems[i] + "\t");
         }
@@ -172,12 +172,10 @@ public class MyArrayList<T> {
     }
 
 
-
     /**
      * 存储当前位置。程序在next方法中试图使用当前位置对下表访问数组元素，然后将当前位置向后推进
      *
      * @author liuyiyou
-     *
      */
     private class ArrayListIterator implements Iterator<T> {
 
@@ -210,8 +208,6 @@ public class MyArrayList<T> {
         }
 
     }
-
-
 
 
 }

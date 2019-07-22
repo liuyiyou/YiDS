@@ -1,6 +1,6 @@
 package mark.allen.weiss.chapter03.stack;
 
-import mark.allen.weiss.chapter03.MyArrayList;
+import mark.allen.weiss.chapter03.list.MyArrayList;
 
 public class MyArrayStack<T> implements MyStack<T> {
 

@@ -69,8 +69,9 @@ public class YSingleLinkedListTest {
 
     @Test
     public void remove() {
-        linkedList.remove(0);
-        Assert.assertEquals(9, linkedList.size());
+        for (int i = 0; i <= 10; i++) {
+            linkedList.remove(0);
+        }
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
